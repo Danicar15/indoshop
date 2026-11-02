@@ -1,0 +1,1 @@
+@extends('layouts.admin') @section('title','ویرایش محصول') @section('content')<h1>ویرایش محصول: {{ $product->name }}</h1><form class="panel" method="POST" action="{{ route('admin.products.update',$product) }}">@csrf @method('PUT') @include('admin.partials.product-form')</form>@endsection

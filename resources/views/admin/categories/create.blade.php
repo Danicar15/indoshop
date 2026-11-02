@@ -1,0 +1,1 @@
+@extends('layouts.admin') @section('title','افزودن دسته‌بندی') @section('content')<h1>افزودن دسته‌بندی</h1><form class="panel" method="POST" action="{{ route('admin.categories.store') }}">@csrf @include('admin.partials.category-form')</form>@endsection
